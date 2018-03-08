@@ -15,13 +15,13 @@ namespace AutomatedTester.BrowserMob
             
             if (UpstreamKbps.HasValue)            
             {
-                builder.AppendFormat("upstream_kbps={0}", UpstreamKbps.Value);
+                builder.AppendFormat("upstreamKbps={0}", UpstreamKbps.Value);
                 delimiter = "&";
             }
 
             if (DownstreamKbps.HasValue)
             {
-                builder.AppendFormat("{0}downstream_kbps={1}", delimiter, DownstreamKbps.Value);
+                builder.AppendFormat("{0}downstreamKbps={1}", delimiter, DownstreamKbps.Value);
                 delimiter = "&";
             }
 
